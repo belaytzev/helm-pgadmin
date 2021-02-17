@@ -1,2 +1,8 @@
-*.tgz
+# misc
+.DS_Store
+.vscode
 .idea
+*.tgz
+*.tar.gz
+**/logs
+*.log

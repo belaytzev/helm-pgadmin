@@ -75,6 +75,8 @@ spec:
 {{ toYaml .Values.livenessProbe | indent 12 }}
           readinessProbe:
 {{ toYaml .Values.readinessProbe | indent 12 }}
+      securityContext:
+        fsGroup: 5050
       volumes:
         - name: pgadmin-data
          {{- if .Values.persistence.enabled }}

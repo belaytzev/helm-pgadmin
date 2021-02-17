@@ -3,7 +3,7 @@
 ##
 image:
   repository: dpage/pgadmin4
-  tag: 4.13
+  tag: 4.30
   pullPolicy: IfNotPresent
  
 pgadmin:
@@ -53,7 +53,7 @@ persistence:
 ##
 service:
   name: pgadmin
-  type: LoadBalancer
+  type: ClusterIP
   port: 80
   tlsport: 443
   annotations: {}
